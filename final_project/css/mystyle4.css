@@ -1,0 +1,84 @@
+.navbar-custom {
+    background-color:#3b5998;
+    color:#ffffff;
+    border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+
+.navbar-custom .navbar-nav > .active > a {
+    color: #ffffff;
+    background-color:transparent;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+    text-decoration: none;
+    background-color: #8b9dc3;
+}
+
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}
+.navbar-custom .navbar-toggle {
+    background-color:#eeeeee;
+}
+.navbar-custom .icon-bar {
+    background-color:#8b9dc3;
+}
+
+/* for dropdowns only */
+.navbar-custom .navbar-nav .dropdown-menu  { 
+  background-color: #8b9dc3;
+}
+.navbar-custom .navbar-nav .dropdown-menu>li>a  { 
+  color: #fff;
+}
+.navbar-custom .navbar-nav .dropdown-menu>li>a:hover,.navbar-custom .navbar-nav .dropdown-menu>li>a:focus  { 
+  color: #8b9dc3;
+}
+
+/*for form (name and mail box only.) */
+    #name{ 
+        width:200px; 
+        height:40px; 
+        border-radius:5px 5px 5px 5px; 
+        background:white; 
+        padding:10px;
+        font-size:18px;
+        margin-top:8px; 
+        border-width: 1px;
+    }
+    #mail{ 
+        width:408px; 
+        height:40px; 
+        border-radius:5px 5px 5px 5px; 
+        background:white; 
+        padding:10px; 
+        font-size:18px; 
+        margin-top:8px; 
+        border-width: 1px; 
+    }
+
+/*for submit button only (Create an account)*/
+    .button{
+        width: 250px;
+        height: 40px;
+        left: 750px;
+        top: 625px;
+        background: green;
+        font-size: 18px;
+        color: white;
+        border-radius: 5px 5px 5px 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: grey;
+        cursor: pointer;
+        outline: none;
+    }
+

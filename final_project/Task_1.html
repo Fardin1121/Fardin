@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Language" content="English">
+  <meta name="Country" content="Bangladesh">
+  <meta name="Course code" content="CSE102-1">
+  <meta name="Student ID" content="2019-2-10-214">
+  <meta name="Name" content="Fardin Faiaz Khan">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="./css/all.css" />
+<title>CSS Website Layout</title>
+</head>
+<body>
+    <div class="header">
+      <h1 style="font-weight: bold;">East West University</h1>
+    </div>
+    <div class="sticky">
+      <ul>
+        <li> <img src="https://upload.wikimedia.org/wikipedia/en/a/a5/East_West_University_Logo.jpg" alt="logo" style="height: 40px; padding: 5px;"></li>
+           <li> <a href="#" class="active">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="4.update/update.php">Admin</a></li>
+            <li><a href="results/results.php">Results</a></li>
+            <li><a href="./css/contacts.html.html" class="disabled-link">Contacts</a></li>
+            <li><a href="#" class="disabled-link">About Us</a></li>
+        </li>
+          <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+
+
+      </ul>
+      </div>
+      <br>
+      <br>
+
+        <div class="contetent">
+        <!-- slideshow -->
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                    <img src="https://media.istockphoto.com/photos/on-the-university-of-washington-campus-in-spring-blossom-time-picture-id1340342476?b=1&k=20&m=1340342476&s=170667a&w=0&h=K00qRTlIGAJ1BZUeXss9DmaiB8MU9f-zr6pGzD_Djtw=" style="width:100%">
+                    <div class="text">
+                    <p style="font-weight: bold;">It is a well-known university with a beautiful campus</p>
+                    <a href="https://www.istockphoto.com/photo/on-the-university-of-washington-campus-in-spring-blossom-time-gm1340342476-420444788?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Funiversity&utm_term=university%3A%3A%3A" class="button">Read more</a>
+                    </div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                    <img src="https://media.istockphoto.com/photos/closeup-of-a-mortarboard-and-degree-certificate-put-on-the-table-picture-id1312058235?b=1&k=20&m=1312058235&s=170667a&w=0&h=vO3IlI9zaDiDkMC7z7EjhuYMUxhzARXI9tuJFCeyL50=" style="width:100%">
+                    <div class="text">
+                    <p style="font-weight: bold;">East West University will help you to get a good career</p>
+                    <a href="https://www.istockphoto.com/photo/close-up-of-a-mortarboard-and-degree-certificate-put-on-the-table-education-stock-gm1312058235-400972148?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Funiversity&utm_term=university%3A%3A%3A" class="button">Read more</a>
+                    </div>
+                     </div>
+
+                    <div class="mySlides fade">
+                    <img src="https://media.istockphoto.com/photos/rearview-shot-of-a-young-woman-cheering-on-graduation-day-picture-id1373670875?b=1&k=20&m=1373670875&s=170667a&w=0&h=bwR0wJNCDnp4tVWFpwP_lt94KU5q_I0rCzYIER3wnPM=" style="width:100%">
+                    <div class="text">
+                    <p style="font-weight: bold;">So, come and join with us to have the caree that you dreamt of</p>
+                    <a href="https://www.istockphoto.com/photo/rearview-shot-of-a-young-woman-cheering-on-graduation-day-gm1373670875-442224716?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Funiversity&utm_term=university%3A%3A%3A" class="button">Read more</a>
+                     </div>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">Previous</a>
+                    <a class="next" onclick="plusSlides(1)">Next</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                    <script>
+                        let slideIndex = 1;
+                        showSlides(slideIndex);
+                        
+                        function plusSlides(n) {
+                          showSlides(slideIndex += n);
+                        }
+                        
+                        function currentSlide(n) {
+                          showSlides(slideIndex = n);
+                        }
+                        
+                        function showSlides(n) {
+                          let i;
+                          let slides = document.getElementsByClassName("mySlides");
+                          let dots = document.getElementsByClassName("dot");
+                          if (n > slides.length) {slideIndex = 1}    
+                          if (n < 1) {slideIndex = slides.length}
+                          for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                          }
+                          for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                          }
+                          slides[slideIndex-1].style.display = "block";  
+                          dots[slideIndex-1].className += " active";
+                        }
+                        </script>
+
+                                            <div class="row">
+                                                <div class="column" style="background-color:#008b8b">
+                                                    <div class="img-round" style="display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;">
+                                                    <img src="./css/pic_11.jpg" alt="CSE 102" style="width:150px; border-radius:50%;">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div class="button_end">
+                                            <a href="" style="text-align: center;">CSE 102</a>
+                                            </div>
+                                            </div>
+                                                <div class="column">
+                                                    <div class="img-round" style="display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;">
+                                                    <img src="./css/pic_22.jpg" alt="MAT 110" style="width:150px; border-radius:50%;">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div class="button_end">
+                                                <a href="" style="text-align: center;">MAT 110</a>
+                                            </div>
+                                            </div>
+                                            <div class="column" style="background-color:#008b8b">
+                                                <div class="img-round" style="display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;">
+                                                    <img src="./css/pic_33.png" alt="ENG 101" style="width:140px; border-radius:50%;">
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="button_end">
+                                                <a href="" style="text-align: center;">ENG 101</a>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            
+                                            <div class="footer">
+                                                <div class="social-icon float-right">
+                                                    <ul>
+                                                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"> Facebook</i></a></li>
+                                                    <li><a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"> Twitter</i></a></li>
+                                                    <li><a href="https://bd.linkedin.com/?trk=guest_homepage-basic_nav-header-logo"><i class="fa fa-linkedin"> Linked in</i></a></li>
+                                                    <li><a href="https://www.google.com.bd/"><i class="fa fa-google"> Google</i></a></li>
+                                                    </ul>
+                                                    <p> Devolaped By Fardin Faiaz Khan</p>
+
+                                                </div>
+
+                                            </div>
+            </div>
+
+</body>
+</html>
